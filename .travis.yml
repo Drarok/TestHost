@@ -1,4 +1,6 @@
 osx_image: xcode6.4
 language: objective-c
 xcode_workspace: TestHost.xcworkspace
-xcode_scheme: TestHostTests
+xcode_scheme: TestHost
+script:
+    - xcodebuild -workspace TestHost.xcworkspace -scheme TestHost -sdk iphonesimulator test
