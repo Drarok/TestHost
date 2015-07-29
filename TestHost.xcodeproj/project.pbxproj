@@ -15,10 +15,18 @@
 		5D0D7D6F1B68F97800202153 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D7D6E1B68F97800202153 /* Images.xcassets */; };
 		5D0D7D721B68F97800202153 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D7D701B68F97800202153 /* LaunchScreen.xib */; };
 		5D0D7D7E1B68F97800202153 /* TestHostTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D7D7D1B68F97800202153 /* TestHostTests.m */; };
+		5DB5B8DE1B693E400036B101 /* TestHostUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB5B8DD1B693E400036B101 /* TestHostUITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		5D0D7D781B68F97800202153 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D0D7D531B68F97800202153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D0D7D5A1B68F97800202153;
+			remoteInfo = TestHost;
+		};
+		5DB5B8E01B693E400036B101 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5D0D7D531B68F97800202153 /* Project object */;
 			proxyType = 1;
@@ -44,6 +52,9 @@
 		5D0D7D771B68F97800202153 /* TestHostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestHostTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D0D7D7C1B68F97800202153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D0D7D7D1B68F97800202153 /* TestHostTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHostTests.m; sourceTree = "<group>"; };
+		5DB5B8DB1B693E400036B101 /* TestHostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestHostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DB5B8DD1B693E400036B101 /* TestHostUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHostUITests.m; sourceTree = "<group>"; };
+		5DB5B8DF1B693E400036B101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71411D6633C473F37126A8CA /* Pods-TestHostTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestHostTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestHostTests/Pods-TestHostTests.release.xcconfig"; sourceTree = "<group>"; };
 		D2673A625685E6794807079B /* libPods-TestHostTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestHostTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -57,6 +68,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5D0D7D741B68F97800202153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DB5B8D81B693E400036B101 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,6 +98,7 @@
 			children = (
 				5D0D7D5D1B68F97800202153 /* TestHost */,
 				5D0D7D7A1B68F97800202153 /* TestHostTests */,
+				5DB5B8DC1B693E400036B101 /* TestHostUITests */,
 				5D0D7D5C1B68F97800202153 /* Products */,
 				25A77584A7E2F62A6876A85B /* Pods */,
 				733C42D50F46CA7460D1DAF7 /* Frameworks */,
@@ -91,6 +110,7 @@
 			children = (
 				5D0D7D5B1B68F97800202153 /* TestHost.app */,
 				5D0D7D771B68F97800202153 /* TestHostTests.xctest */,
+				5DB5B8DB1B693E400036B101 /* TestHostUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +156,15 @@
 				5D0D7D7C1B68F97800202153 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DB5B8DC1B693E400036B101 /* TestHostUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5DB5B8DD1B693E400036B101 /* TestHostUITests.m */,
+				5DB5B8DF1B693E400036B101 /* Info.plist */,
+			);
+			path = TestHostUITests;
 			sourceTree = "<group>";
 		};
 		733C42D50F46CA7460D1DAF7 /* Frameworks */ = {
@@ -184,6 +213,24 @@
 			productReference = 5D0D7D771B68F97800202153 /* TestHostTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		5DB5B8DA1B693E400036B101 /* TestHostUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DB5B8E21B693E400036B101 /* Build configuration list for PBXNativeTarget "TestHostUITests" */;
+			buildPhases = (
+				5DB5B8D71B693E400036B101 /* Sources */,
+				5DB5B8D81B693E400036B101 /* Frameworks */,
+				5DB5B8D91B693E400036B101 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DB5B8E11B693E400036B101 /* PBXTargetDependency */,
+			);
+			name = TestHostUITests;
+			productName = TestHostUITests;
+			productReference = 5DB5B8DB1B693E400036B101 /* TestHostUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,6 +245,10 @@
 					};
 					5D0D7D761B68F97800202153 = {
 						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 5D0D7D5A1B68F97800202153;
+					};
+					5DB5B8DA1B693E400036B101 = {
+						CreatedOnToolsVersion = 7.0;
 						TestTargetID = 5D0D7D5A1B68F97800202153;
 					};
 				};
@@ -217,6 +268,7 @@
 			targets = (
 				5D0D7D5A1B68F97800202153 /* TestHost */,
 				5D0D7D761B68F97800202153 /* TestHostTests */,
+				5DB5B8DA1B693E400036B101 /* TestHostUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +285,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5D0D7D751B68F97800202153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DB5B8D91B693E400036B101 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,6 +320,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5DB5B8D71B693E400036B101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB5B8DE1B693E400036B101 /* TestHostUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -268,6 +335,11 @@
 			isa = PBXTargetDependency;
 			target = 5D0D7D5A1B68F97800202153 /* TestHost */;
 			targetProxy = 5D0D7D781B68F97800202153 /* PBXContainerItemProxy */;
+		};
+		5DB5B8E11B693E400036B101 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D0D7D5A1B68F97800202153 /* TestHost */;
+			targetProxy = 5DB5B8E01B693E400036B101 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -425,6 +497,34 @@
 			};
 			name = Release;
 		};
+		5DB5B8E31B693E400036B101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = TestHostUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.whiteoctober.TestHostUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestHost;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		5DB5B8E41B693E400036B101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestHostUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.whiteoctober.TestHostUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestHost;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -454,6 +554,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5DB5B8E21B693E400036B101 /* Build configuration list for PBXNativeTarget "TestHostUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DB5B8E31B693E400036B101 /* Debug */,
+				5DB5B8E41B693E400036B101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
