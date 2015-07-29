@@ -4,4 +4,4 @@ xcode_workspace: TestHost.xcworkspace
 xcode_scheme: TestHost
 script:
     - xcodebuild -workspace TestHost.xcworkspace -list
-    - xcodebuild -workspace TestHost.xcworkspace -scheme TestHost -sdk iphonesimulator test
+    - xcodebuild -workspace TestHost.xcworkspace -scheme TestHostTests -sdk iphonesimulator test
