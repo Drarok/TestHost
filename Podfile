@@ -6,6 +6,5 @@ target 'TestHost' do
 end
 
 target 'TestHostTests' do
-  pod 'Cedar'
 end
 
