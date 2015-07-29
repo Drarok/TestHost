@@ -44,7 +44,6 @@
 		5D0D7D771B68F97800202153 /* TestHostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestHostTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D0D7D7C1B68F97800202153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D0D7D7D1B68F97800202153 /* TestHostTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHostTests.m; sourceTree = "<group>"; };
-		5D0D7D871B68FA6300202153 /* MasterViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MasterViewControllerSpec.mm; sourceTree = "<group>"; };
 		71411D6633C473F37126A8CA /* Pods-TestHostTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestHostTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestHostTests/Pods-TestHostTests.release.xcconfig"; sourceTree = "<group>"; };
 		D2673A625685E6794807079B /* libPods-TestHostTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestHostTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -127,7 +126,6 @@
 			children = (
 				5D0D7D7D1B68F97800202153 /* TestHostTests.m */,
 				5D0D7D7B1B68F97800202153 /* Supporting Files */,
-				5D0D7D871B68FA6300202153 /* MasterViewControllerSpec.mm */,
 			);
 			path = TestHostTests;
 			sourceTree = "<group>";
