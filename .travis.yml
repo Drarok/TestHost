@@ -1,0 +1,4 @@
+osx_image: xcode6.4
+language: objective-c
+xcode_project: TestHost.xcodeproj
+xcode_scheme: TestHost
