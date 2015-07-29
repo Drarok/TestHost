@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
+#import "MasterViewController.h"
+
 @interface TestHostTests : XCTestCase
 
 @end
@@ -30,11 +32,19 @@
     XCTAssert(YES, @"Pass");
 }
 
+- (void)testController {
+    MasterViewController *controller = [[MasterViewController alloc] init];
+    [controller insertNewObject:nil];
+    XCTAssertEqual([[controller objects] count], 1);
+}
+
+/*
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
 }
+*/
 
 @end

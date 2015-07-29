@@ -10,6 +10,10 @@
 
 @interface MasterViewController : UITableViewController
 
+@property NSMutableArray *objects;
+@property NSInteger nextObjectId;
+
+- (void)insertNewObject:(id)sender;
 
 @end
 
