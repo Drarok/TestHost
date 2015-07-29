@@ -7,13 +7,14 @@ using namespace Cedar::Doubles;
 SPEC_BEGIN(MasterViewControllerSpec)
 
 describe(@"MasterViewController", ^{
-    __block MasterViewController *controller;
-
-    beforeEach(^{
-         controller = [[MasterViewController alloc] init];
-    });
 
     describe(@"objects", ^{
+        __block MasterViewController *controller;
+
+        beforeEach(^{
+            controller = [[MasterViewController alloc] init];
+        });
+
         it(@"should start off nil", ^{
             controller.objects should be_nil();
         });
