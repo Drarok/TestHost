@@ -15,8 +15,6 @@
 		5D0D7D6F1B68F97800202153 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D7D6E1B68F97800202153 /* Images.xcassets */; };
 		5D0D7D721B68F97800202153 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D7D701B68F97800202153 /* LaunchScreen.xib */; };
 		5D0D7D7E1B68F97800202153 /* TestHostTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D7D7D1B68F97800202153 /* TestHostTests.m */; };
-		5D0D7D881B68FA6300202153 /* MasterViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D7D871B68FA6300202153 /* MasterViewControllerSpec.mm */; };
-		9948753E3F61DF001EE8EB63 /* libPods-TestHostTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2673A625685E6794807079B /* libPods-TestHostTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9948753E3F61DF001EE8EB63 /* libPods-TestHostTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,11 +172,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D0D7D841B68F97800202153 /* Build configuration list for PBXNativeTarget "TestHostTests" */;
 			buildPhases = (
-				F622F5F235E66D5EA7664734 /* Check Pods Manifest.lock */,
 				5D0D7D731B68F97800202153 /* Sources */,
 				5D0D7D741B68F97800202153 /* Frameworks */,
 				5D0D7D751B68F97800202153 /* Resources */,
-				197C59F1ED32FACBCF546492 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,39 +243,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		197C59F1ED32FACBCF546492 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestHostTests/Pods-TestHostTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F622F5F235E66D5EA7664734 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		5D0D7D571B68F97800202153 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -298,7 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D0D7D7E1B68F97800202153 /* TestHostTests.m in Sources */,
-				5D0D7D881B68FA6300202153 /* MasterViewControllerSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +395,6 @@
 		};
 		5D0D7D851B68F97800202153 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E326BDE214150F7BF028EC0 /* Pods-TestHostTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -454,7 +414,6 @@
 		};
 		5D0D7D861B68F97800202153 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71411D6633C473F37126A8CA /* Pods-TestHostTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
