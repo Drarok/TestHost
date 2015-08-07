@@ -54,4 +54,23 @@
     [app.staticTexts[@"4"] tap];
 }
 
+- (void)testDeleteAll {
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+
+    XCUIElement *addButton = app.navigationBars[@"Master"].buttons[@"Add"];
+    [addButton tap];
+    [addButton tap];
+    [addButton tap];
+    [addButton tap];
+    
+    XCUIElementQuery *tablesQuery = app.tables;
+    XCUIElement *deleteButton = tablesQuery.buttons[@"Delete"];
+
+    while (tablesQuery.staticTexts.count) {
+        [[tablesQuery.staticTexts elementBoundByIndex:0] swipeLeft];
+        [deleteButton tap];
+    }
+
+}
+
 @end
