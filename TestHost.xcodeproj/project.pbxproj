@@ -15,6 +15,8 @@
 		5D0D7D6F1B68F97800202153 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D7D6E1B68F97800202153 /* Images.xcassets */; };
 		5D0D7D721B68F97800202153 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D7D701B68F97800202153 /* LaunchScreen.xib */; };
 		5D0D7D7E1B68F97800202153 /* TestHostTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D7D7D1B68F97800202153 /* TestHostTests.m */; };
+		5DDFA3A71B74C4EC0093A419 /* MyKiwiTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDFA3A61B74C4EC0093A419 /* MyKiwiTest.m */; };
+		60866108521EBBB54A615C75 /* libPods-TestHostTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2673A625685E6794807079B /* libPods-TestHostTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		5D0D7D771B68F97800202153 /* TestHostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestHostTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D0D7D7C1B68F97800202153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D0D7D7D1B68F97800202153 /* TestHostTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHostTests.m; sourceTree = "<group>"; };
+		5DDFA3A61B74C4EC0093A419 /* MyKiwiTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyKiwiTest.m; sourceTree = "<group>"; };
 		71411D6633C473F37126A8CA /* Pods-TestHostTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestHostTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestHostTests/Pods-TestHostTests.release.xcconfig"; sourceTree = "<group>"; };
 		D2673A625685E6794807079B /* libPods-TestHostTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestHostTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -60,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60866108521EBBB54A615C75 /* libPods-TestHostTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +130,7 @@
 			children = (
 				5D0D7D7D1B68F97800202153 /* TestHostTests.m */,
 				5D0D7D7B1B68F97800202153 /* Supporting Files */,
+				5DDFA3A61B74C4EC0093A419 /* MyKiwiTest.m */,
 			);
 			path = TestHostTests;
 			sourceTree = "<group>";
@@ -170,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D0D7D841B68F97800202153 /* Build configuration list for PBXNativeTarget "TestHostTests" */;
 			buildPhases = (
+				0E6A57FD933135DC8D192314 /* Check Pods Manifest.lock */,
 				5D0D7D731B68F97800202153 /* Sources */,
 				5D0D7D741B68F97800202153 /* Frameworks */,
 				5D0D7D751B68F97800202153 /* Resources */,
+				C3804FE9738DD23FC7B06BAE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,6 +248,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E6A57FD933135DC8D192314 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C3804FE9738DD23FC7B06BAE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestHostTests/Pods-TestHostTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5D0D7D571B68F97800202153 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D0D7D7E1B68F97800202153 /* TestHostTests.m in Sources */,
+				5DDFA3A71B74C4EC0093A419 /* MyKiwiTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +434,7 @@
 		};
 		5D0D7D851B68F97800202153 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E326BDE214150F7BF028EC0 /* Pods-TestHostTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -412,6 +454,7 @@
 		};
 		5D0D7D861B68F97800202153 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71411D6633C473F37126A8CA /* Pods-TestHostTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
